@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="converter-box">
+            <h2 class="converted-amount">$ 0.00</h2>
+            <p class="subtitle">Converted Currency (USD)</p>
+            
+            <div class="input-group">
+                <label>AMOUNT</label>
+                <input type="number" id="amount" value="100.00">
+            </div>
+
+            <div class="currency-selectors">
+                <div class="currency-box">
+                    <img src="https://flagcdn.com/us.svg" alt="USD" class="flag">
+                    <select id="fromCurrency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="CNY">CNY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="NGN">NGN</option>
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+
+                <div class="currency-box">
+                    <img src="https://flagcdn.com/us.svg" alt="USD" class="flag">
+                    <select id="toCurrency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="CNY">CNY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="NGN">NGN</option>
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rate-info">
+                <span>1 NGN = 0.0014 USD</span>
+                <span>1 USD = 740 NGN</span>
+            </div>
+
+            <button id="convertBtn">CONVERT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
